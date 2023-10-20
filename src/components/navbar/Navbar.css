@@ -1,0 +1,41 @@
+.n_wrapper{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+.n_left,.n_right{
+  /* for width 50-50 , flex:1*/
+  flex: 1; 
+  display: flex;
+}
+.n_left{
+    align-items: center;
+    gap: 2rem;
+}
+.n_name{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.n_right{
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+}
+/* .n_lists{
+    the lists div will take more width
+    flex: 10;
+} */
+.n_lists ul{
+    display: flex;
+    gap: 2rem;
+    margin-right: 4rem;
+}
+.n_lists ul :hover{
+    cursor: pointer;
+    color: var(--orange);
+}
+.n_btn:hover{
+    background: white;
+    color: var(--orange);
+    border: 2px solid var(--orange);
+}
