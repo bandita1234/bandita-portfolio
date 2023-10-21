@@ -1,12 +1,12 @@
 import React from "react";
-import "../intro/Intro.css";
-import GithubImg from "../../img/github.png";
-import LinkedinImg from "../../img/linkedin.png";
-import InstaImg from "../../img/instagram.png";
-import BanditaImg from "../../img/my_img4.jpg";
-import Emoji_1 from "../../img/glassesimoji.png";
-import crownImage from "../../img/crown.png";
-import heartEmoji from "../../img/heartemoji.png";
+import "./Intro.css";
+import GithubImg from "../../../img/github.png";
+import LinkedinImg from "../../../img/linkedin.png";
+import InstaImg from "../../../img/instagram.png";
+import BanditaImg from "../../../img/my_img4.jpg";
+import Emoji_1 from "../../../img/glassesimoji.png";
+import crownImage from "../../../img/crown.png";
+import heartEmoji from "../../../img/heartemoji.png";
 import FloatingDiv from "../FloatingDiv/FloatingDiv";
 
 const Intro = () => {

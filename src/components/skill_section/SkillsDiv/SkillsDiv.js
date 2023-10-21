@@ -1,14 +1,14 @@
 import React from 'react'
 import './skillsDiv.css'
-import html from "../../img/HTML.png"
 
-const SkillsDiv = () => {
+
+const SkillsDiv = (props) => {
   return (
     <div className='skilldiv_main'>
         <div className='skilldiv_img'>
-            <img src={html} alt="" />
+            <img src={props.img} alt="" />
         </div>
-        <p>fnjkcns</p>
+        <p>{props.title}</p>
     </div>
   )
 }

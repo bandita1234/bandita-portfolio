@@ -1,8 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/navbar/Navbar';
-import Intro from './components/intro/Intro';
-import Skill from './components/Skills/Skill';
+import Intro from './components/intro_section/intro/Intro';
+import Skill from './components/skill_section/Skills/Skill';
 
 function App() {
   return (
