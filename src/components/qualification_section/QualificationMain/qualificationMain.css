@@ -1,0 +1,10 @@
+.qualification_main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.selecetd_bg{
+    background-color: #fdedce;
+    padding: 2px 8px;
+    border-radius: 8px;
+}

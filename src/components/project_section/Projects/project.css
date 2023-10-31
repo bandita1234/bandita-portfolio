@@ -1,0 +1,6 @@
+.swiper_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: #000; */
+}
