@@ -1,32 +1,44 @@
-:root{
-  --yellow : #F5C32C;
-  --orange : #FCA61F;
-  --black : #242D49;
-  --gray : #788097;
-  --blueCard : #DDF8FE;
-  --purple : rgb(238 210 255);
-  --boxShadow : 0px 19px 60px rgba(0, 0, 0, 0.08);
-  --orangeCard : rgba(252, 167, 31, 0.45);
-  --smboxShadow : ;
-  --background: rgba(246, 227, 179, 0.91);
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
 }
 
-.App{
-  padding: 0.5rem 3.5rem;
+:root {
+  --yellow: #f5c32c;
+  --orange: #fca61f;
+  --black: #242d49;
+  --gray: #788097;
+  --blueCard: #ddf8fe;
+  --purple: rgb(238 210 255);
+  --boxShadow: 0px 19px 60px rgba(0, 0, 0, 0.08);
+  --orangeCard: rgba(252, 167, 31, 0.45);
+  --smboxShadow: ;
+  /* --background: rgba(246, 227, 179, 0.91); */
+}
+
+.App {
+  padding: 0.5rem 3rem;
   overflow: hidden;
   color: var(--black);
 }
-.button{
+
+.darkMode {
+  background-color: #000;
+}
+
+.button {
   border-radius: 34px;
   border: none;
   color: white;
   font-size: 16px;
-  padding: 11px 26px 11px 26px;
-  background: linear-gradient(rgb(255, 186, 58),rgb(251, 164, 2));
+  padding: 11px 26px;
+  /* padding: 2% 4%; */
+  background: linear-gradient(rgb(233, 199, 137), rgb(251, 164, 2));
   box-shadow: 0 0 10px rgb(109, 82, 32);
 }
 
-.heading{
+.heading {
   color: var(--orange);
   font-size: 40px;
   letter-spacing: 2px;
@@ -34,4 +46,10 @@
   text-transform: uppercase;
   /* margin: 0; */
   /* background: linear-gradient(120deg, #f6d365 0%, #fda085 100%); */
+}
+
+@media screen and (max-width: 530px) {
+  .App{
+    padding: 0.5rem 1rem;
+  }
 }

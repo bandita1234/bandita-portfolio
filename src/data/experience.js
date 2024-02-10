@@ -1,7 +1,7 @@
 export const experience = [
   {
     position: "Full Stack Developer Intern",
-    company: "Glosity",
+    company: "Glosity , Bhubaneswar, Odisha",
     duration: "June 2023 - Present",
     desc: "bcjfjgcefb febh",
   },

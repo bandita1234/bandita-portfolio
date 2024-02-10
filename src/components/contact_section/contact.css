@@ -1,0 +1,108 @@
+/* body {
+  font: 400 16px Montserrat, sans-serif;
+  color: #444;
+  padding: 0;
+  margin: 0;
+  background-color: #f8f8f8;
+} */
+
+.contact_container {
+  margin-top: 2rem;
+  display: flex;
+  /* min-height: 100vh; */
+  align-items: center;
+  justify-content: space-around;
+  /* gap: 2rem; */
+}
+
+/* h1 {
+  margin: 2rem 2rem 0;
+  font-size: 1.62rem;
+} */
+
+.contact_form {
+  padding: 2rem;
+  width: 50%;
+  border: 2px solid #edc789;
+  box-shadow: 0px 12px 50px #fbf1d5;
+}
+.contact_heading{
+    text-align: center;
+}
+
+.text-input,
+.text-area {
+  position: relative;
+  margin-bottom: 1rem;
+  /* width: 100%; */
+}
+
+.text-input label,
+.text-area label {
+  position: absolute;
+  top: 1ch;
+  left: 1ch;
+  padding: 0 0.5ch;
+  pointer-events: none;
+  transition: 150ms ease;
+  color: #888;
+}
+
+.text-input input,
+.text-area textarea {
+  display: block;
+  width: 100%;
+  border: 2px solid #f8e7cc;
+  padding: 1ch;
+  border-radius: 3px;
+  transition: 150ms ease;
+  outline: none;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.text-input input:focus,
+.text-area textarea:focus {
+  border-color: var(--orange);
+}
+
+.text-input label.label-focus,
+.text-area label.label-focus {
+  position: absolute;
+  top: 0;
+  font-size: 0.9em;
+  color: var(--orange);
+  font-weight: bold;
+  transform: translateY(-50%);
+  background-color: #fff;
+  font-weight: 600;
+}
+.contact_btn{
+    width: 40%;
+    border-radius: 34px;
+  border: none;
+  font-size: 16px;
+  padding: 11px 26px 11px 26px;
+  background: linear-gradient(rgb(233, 199, 137),rgb(251, 164, 2));
+
+  font-size: 1rem;
+  color: #fff;
+  font-family: inherit;
+  /* box-shadow: 0 0 10px rgb(109, 82, 32); */
+  
+}
+
+/* button {
+  display: block;
+  width: 50%;
+  background-color: var(--orange);
+  border: none;
+  border-radius: 8px;
+  padding: 1ch;
+  font-size: 1rem;
+  color: #fff;
+  font-family: inherit;
+  margin: auto;
+} */
+
+/* Add more styles as needed for your specific design. */

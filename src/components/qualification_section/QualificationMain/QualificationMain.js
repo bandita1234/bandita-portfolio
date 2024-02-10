@@ -7,10 +7,10 @@ const QualificationMain = () => {
   const [tab,setTab] = useState(0);
   // console.log(tab);
   return (
-    <div>
+    <div className="qualification_section" id="qualification">
       <div className="qualification_main">
-        <div className={tab==0 ? "selecetd_bg heading" : "heading"} onClick={()=>setTab(0)}>Qualification</div>
-        <div className={tab==1 ? "selecetd_bg heading" : "heading"} onClick={()=>setTab(1)}>Work Experience</div>
+        <div className={tab==0 ? "selecetd_bg" : "notSelected"} onClick={()=>setTab(0)}>Education</div>
+        <div className={tab==1 ? "selecetd_bg" : "notSelected"} onClick={()=>setTab(1)}>Work Experience</div>
       </div>
       <div>
       {tab == 0 ?  <Qualification /> : <Experience/>}

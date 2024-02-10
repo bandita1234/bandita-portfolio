@@ -24,7 +24,7 @@ import react_native from "../../../img/REACT_NATIVE.png"
 
 const Skill = () => {
   return (
-    <div className="skill_section">
+    <div className="skill_section" id="skills">
       <h2 className="heading">My Skills</h2>
 
       <div className="skill_container">

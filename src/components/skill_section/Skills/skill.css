@@ -10,3 +10,11 @@
     gap: 2rem;
     /* width: 50%; */
 }
+@media screen and (max-width: 530px) {
+    .skill_container{
+        /* flex-wrap: nowrap;
+        flex-direction: column; */
+        padding: 0;
+        gap: 4px;
+    }
+}

@@ -5,6 +5,7 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
+import qual_icon from "../../../img/education.svg";
 import { qualification } from "../../../data/qualification";
 
 const Qualification = () => {
@@ -17,15 +18,28 @@ const Qualification = () => {
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
               date={item?.duration}
+              iconStyle={{
+                background: "#fdedce",
+                color: "#fff",
+                borderRadius: "50%",
+              }}
+              icon={
+                <img
+                  src={qual_icon}
+                  alt="Qualification Icon"
+                  style={{ maxWidth: "100%", height: "auto" }} // Adjust the size here
+                />
+              }
+              // icon={qual_icon}
               contentStyle={{
-                background: "rgba(246, 227, 179, 0.91)",
-                border: "4px solid #FCA61F" ,
-                borderStyle:"double",
+                background: "#fdedce",
+                border: "4px solid #FCA61F",
+                borderStyle: "double",
                 color: "#45474B",
-                borderRadius: "8px"
+                borderRadius: "8px",
                 // backgroundImage: "radial-gradient(circle at 10% 20%, rgb(255, 200, 124) 0%, rgb(252, 251, 121) 90%);"
               }}
-              contentArrowStyle={{ borderRight: "20px solid  rgba(246, 227, 179, 0.91)" }}
+              contentArrowStyle={{ borderRight: "20px solid  #fdedce" }}
 
               //   iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
               //   icon={<WorkIcon />}

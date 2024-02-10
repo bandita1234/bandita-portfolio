@@ -1,10 +1,30 @@
+.qualification_section{
+    margin-top: 2rem;
+}
 .qualification_main{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    /* border-bottom: 2px solid #fdedce; */
+    margin: 1rem 0;
+    box-shadow: var(--boxShadow);
 }
 .selecetd_bg{
-    background-color: #fdedce;
+    /* background-color: #fdedce; */
     padding: 2px 8px;
     border-radius: 8px;
+    border-bottom: 3px solid #FCA61F;
+
+    color: var(--orange);
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.notSelected{
+    color: #efd1a1;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
 }

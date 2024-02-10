@@ -11,7 +11,7 @@ import FloatingDiv from "../FloatingDiv/FloatingDiv";
 
 const Intro = () => {
   return (
-    <div className="intro_main">
+    <div className="intro_main" id="intro">
       <div className="i_left">
         <div className="i_name">
           <span>Hey! I Am</span>
@@ -20,9 +20,20 @@ const Intro = () => {
             I am an enthusiastic learner with creative insights. Eager to learn
             and explore different areas of technology. I'm very ambitious and
             want to work hard and explore computer science.
+            I am an enthusiastic learner with creative insights. Eager to learn
+            and explore different areas of technology. I'm very ambitious and
+            want to work hard and explore computer science.
+            I am an enthusiastic learner with creative insights. Eager to learn
+            and explore different areas of technology. I'm very ambitious and
+            want to work hard and explore computer science.
           </span>
         </div>
+        <div className="intro_btn_container">
         <button className="button i_btn">Hire me!</button>
+        <a href="./Bandita_Bahinipati_Resume.pdf" download="Bandita_Bahinipati_Resume">
+        <button className="button i_btn">Download Resume</button>
+        </a>
+        </div>
         <div className="i_icons">
           <img src={GithubImg} alt="GithubImg" />
           <img src={LinkedinImg} alt="LinkedinImg" />
