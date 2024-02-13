@@ -11,10 +11,13 @@
     /* width: 50%; */
 }
 @media screen and (max-width: 530px) {
+    .skill_section{
+        padding: 0;
+    }
     .skill_container{
         /* flex-wrap: nowrap;
         flex-direction: column; */
         padding: 0;
-        gap: 4px;
+        gap: 6px;
     }
 }

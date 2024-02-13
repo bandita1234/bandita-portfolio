@@ -1,12 +1,13 @@
 .intro_main {
   /* height: 77vh; */
   display: flex;
+  /* flex-wrap: wrap; */
   /* margin-top: 5rem; */
 }
-.i_left,.i_right {
+.i_left,
+.i_right {
   display: flex;
   flex: 1;
-
 }
 .i_left {
   flex-direction: column;
@@ -26,14 +27,27 @@
   color: var(--orange);
   font-weight: bold;
   font-size: 3rem;
+
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing;
+  animation-duration: 2.5s;
+  animation-timing-function: steps(43, end);
+  animation-fill-mode: forwards;
 }
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
 .i_name > :nth-child(3) {
   color: var(--gray);
   font-weight: 100;
   font-size: 14px;
   margin-top: 1rem;
 }
-.intro_btn_container{
+.intro_btn_container {
   display: flex;
   gap: 4%;
 }
@@ -50,7 +64,7 @@
 }
 .i_icons {
   cursor: pointer;
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
   display: flex;
   /* gap: 0rem; */
 }
@@ -59,7 +73,7 @@
   /* the above code make the images half of their current size*/
 }
 .i_icons *:hover {
-  transform: scale(0.6) ;
+  transform: scale(0.6);
 }
 
 .i_right {
@@ -67,63 +81,68 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  padding: 2%;
 }
 
 /* image fix */
-.Personalimage_container{
-  /* height: 500px;
-  width: 500px; */
+/* .Personalimage_container{
+ width: 500px;
+ height: 500px;
 
-  height: 90%;
-  min-width: 50%;
   border-radius: 50%;
   overflow: hidden;
-  /* object-fit: cover; */
+} */
+.Personalimage_container {
+  width: 500px; /* Add max-width */
+  height: 500px; /* Change height to auto */
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(83, 83, 83, 0.5); /* Add shadow */
+
 }
-.Bandita_img{
+
+.Bandita_img {
   height: 100%;
   width: 100%;
   object-fit: cover;
- 
-  position: relative;
 
+  position: relative;
 
   box-shadow: 0 0 50px rgba(219, 113, 71, 0.5);
   /* top: -16%;  */
   /* shadow */
 }
 
-
-.f_div_right{
+.f_div_right {
   position: absolute;
-  left: 60%;
+  left: 65%;
   top: 24px;
 }
-.f_div_left{
+.f_div_left {
   position: absolute;
-  top: 29rem;
-  left: -20px;
+  top: 24rem;
+  left: 34px;
 }
 
-.Emoji_1{
+.Emoji_1 {
   position: absolute;
   transform: scale(0.8);
   left: -30px;
 }
 
 
-
-/* .blur{
-  background: linear-gradient(#FFCEFE,#FFD495);
- width: 90%;
- border-radius: 50%;
- left: 70%;
-
-} */
-
-@media screen and(max-width:768px) {
-  .intro_main{
+@media screen and (max-width:768px) {
+  .intro_main {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+}
+@media screen and (max-width:600px) {
+  .Personalimage_container {
+    max-width: 300px;
+    max-height: 300px;
+  }
+  .i_name :nth-child(1) , .i_name :nth-child(2){
+    font-size: 2rem;
   }
 }

@@ -1,6 +1,13 @@
 .swiper_container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background: #000; */
+}
+.swiper-wrapper{
+    padding-bottom: 36px;
+}
+.swiper-button-next,.swiper-button-prev{
+    background-color: #7d7d7dac;
+    padding:30px;
+    border-radius: 50%;
+}
+.swiper-button-next:hover,.swiper-button-prev:hover{
+    transform: scale(1.2);
 }

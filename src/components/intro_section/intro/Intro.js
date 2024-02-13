@@ -45,14 +45,13 @@ const Intro = () => {
         <div className="Personalimage_container">
           <img className="Bandita_img" src={BanditaImg} alt="BanditaImg" />
         </div>
-        <img className="Emoji_1" src={Emoji_1} alt="glassEmoji" />
+        {/* <img className="Emoji_1" src={Emoji_1} alt="glassEmoji" /> */}
         <div className="f_div_right">
           <FloatingDiv image={crownImage} txt1="Web" txt2="Developer" />
         </div>
         <div className="f_div_left">
           <FloatingDiv image={heartEmoji} txt1="Frontend" txt2="Backend" />
         </div>
-        <div className="blur"></div>
       </div>
     </div>
   );

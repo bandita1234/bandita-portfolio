@@ -14,11 +14,11 @@ function App() {
   return (
     <div className={`App ${checked} ? "" : "darkMode"}`}>
     
-      {/* <Navbar checked={checked} setChecked={setChecked}/> */}
+      {/* <Navbar checked={checked} setChecked={setChecked}/>
       <Intro/>
-      {/* <Skill/>
+      <Skill/> */}
       <Project/>
-      <QualificationMain/>
+      {/* <QualificationMain/>
       <Contact/> */}
     </div>
   );
