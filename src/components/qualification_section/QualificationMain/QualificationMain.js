@@ -9,11 +9,11 @@ const QualificationMain = () => {
   return (
     <div className="qualification_section" id="qualification">
       <div className="qualification_main">
-        <div className={tab==0 ? "selecetd_bg" : "notSelected"} onClick={()=>setTab(0)}>Education</div>
-        <div className={tab==1 ? "selecetd_bg" : "notSelected"} onClick={()=>setTab(1)}>Work Experience</div>
+        <div className={tab==0 ? "selecetd_bg" : "notSelected"} onClick={()=>setTab(0)}>Work Experience</div>
+        <div className={tab==1 ? "selecetd_bg" : "notSelected"} onClick={()=>setTab(1)}>Education</div>
       </div>
       <div>
-      {tab == 0 ?  <Qualification /> : <Experience/>}
+      {tab == 0 ?  <Experience /> : <Qualification/>}
        
       </div>
     </div>

@@ -40,7 +40,7 @@ const Contact = () => {
 
   return (
     <>
-    <h2 className="heading">Contact Form</h2>
+    <h2 className="contact_heading_main">Contact Form</h2>
     <div className="contact_container">
       <div className="contact_heading">
         <h2 style={{fontSize:'30px', marginBottom:'0px',letterSpacing:'2px'}}>Get In Touch!</h2>

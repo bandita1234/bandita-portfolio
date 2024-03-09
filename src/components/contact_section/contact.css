@@ -91,6 +91,25 @@
   /* box-shadow: 0 0 10px rgb(109, 82, 32); */
   
 }
+.contact_heading_main{
+  color: var(--orange);
+  font-size: 40px;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width:768px) {
+  .contact_container{
+    flex-direction: column;
+  }
+  .contact_form{
+    width: 100%;
+  }
+  .contact_heading_main{
+    display: none;
+  }
+}
 
 /* button {
   display: block;

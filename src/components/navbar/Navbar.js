@@ -93,7 +93,17 @@ const Navbar = ({ checked, setChecked }) => {
             offset={-100}
             duration={500}
           >
-            Qualification
+            Experience
+          </Link>
+          <Link
+            to="qualification"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+          >
+            {/* Qualification */}
+            Education
           </Link>
 
           <a

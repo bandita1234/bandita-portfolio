@@ -6,7 +6,7 @@
     overflow: hidden;
     max-width: 300px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* margin: 10px; */
+    margin: 6px;
   }
   
   .card-image {
@@ -16,6 +16,11 @@
   
   .card-content {
     padding: 16px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
   .card-title {
@@ -27,8 +32,13 @@
     font-size: 1rem;
     color: #666;
     margin: 8px 0;
+    text-align: left;
+    padding: 0 6px;
   }
-  
+  .card_btn_main{
+    display: flex;
+    gap: 8px;
+  }
   .card-button {
     background-color: #007BFF;
     color: #fff;

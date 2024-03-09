@@ -3,10 +3,10 @@ import "./project.css";
 import ProjectCard from "../projectCard/ProjectCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
-import { Navigation , Pagination } from "swiper/modules";
+import { Navigation, Pagination } from "swiper/modules";
 
 import djhfb from "../../../img/bandita_img.jpg";
 
@@ -17,15 +17,37 @@ const Project = () => {
       <div className="swiper_container">
         <Swiper
           navigation={true}
-          modules={[Navigation ,Pagination]}
+          modules={[Navigation, Pagination]}
           slidesPerView={4}
           spaceBetween={20}
           pagination={{
             clickable: true,
           }}
           className="mySwiper"
+          breakpoints={{
+            0: {
+              slidesPerView: 1,
+            },
+            463: {
+              slidesPerView: 2,
+            },
+            700: {
+              slidesPerView: 3,
+            },
+            865: {
+              slidesPerView: 4,
+            },
+            1300: {
+              slidesPerView: 5,
+            },
+            1700: {
+              slidesPerView: 6,
+            },
+            2000: {
+              slidesPerView: 7,
+            },
+          }}
         >
-        
           <SwiperSlide>
             <div>
               <ProjectCard

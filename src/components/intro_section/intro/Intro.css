@@ -37,8 +37,12 @@
   animation-fill-mode: forwards;
 }
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 .i_name > :nth-child(3) {
@@ -50,6 +54,7 @@
 .intro_btn_container {
   display: flex;
   gap: 4%;
+  padding: 2%;
 }
 /* .i_btn {
   width: 8rem;
@@ -59,8 +64,9 @@
   background: white;
   cursor: pointer;
   color: var(--orange);
-  font-weight: bold;
-  border: 2px solid var(--orange);
+  /* font-weight: bold; */
+  /* border: 2px solid var(--orange); */
+  box-shadow: 0 0 0 2px var(--orange);
 }
 .i_icons {
   cursor: pointer;
@@ -93,12 +99,15 @@
   overflow: hidden;
 } */
 .Personalimage_container {
-  width: 500px; /* Add max-width */
-  height: 500px; /* Change height to auto */
+  /* width: 500px; 
+  height: 500px; */
+  width: 100%; /* Adjust the width */
+  max-width: 500px; /* Limit the maximum width */
+  min-width: 300px;
+  height: auto; 
   border-radius: 50%;
   overflow: hidden;
   box-shadow: 0 0 30px rgba(83, 83, 83, 0.5); /* Add shadow */
-
 }
 
 .Bandita_img {
@@ -130,19 +139,28 @@
   left: -30px;
 }
 
-
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   .intro_main {
     display: flex;
     flex-direction: column-reverse;
   }
 }
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
   .Personalimage_container {
     max-width: 300px;
     max-height: 300px;
   }
-  .i_name :nth-child(1) , .i_name :nth-child(2){
+  .i_name :nth-child(1),
+  .i_name :nth-child(2) {
     font-size: 2rem;
+  }
+} 
+@media screen and (min-device-width: 768px) and (max-device-width: 950px) {
+  .f_div_right {
+    top: 20px;
+    transform: translateX(-50%); 
+  }
+  .f_div_left{
+    top: 24rem;
   }
 }

@@ -12,14 +12,14 @@ function App() {
   const [checked, setChecked] = useState(true);
   console.log(checked);
   return (
-    <div className={`App ${checked} ? "" : "darkMode"}`}>
+    <div className={`App ${checked ? "" : "darkMode"}`}>
     
-      {/* <Navbar checked={checked} setChecked={setChecked}/>
+      {/* <Navbar checked={checked} setChecked={setChecked}/> */}
       <Intro/>
-      <Skill/> */}
+      <Skill/>
       <Project/>
-      {/* <QualificationMain/>
-      <Contact/> */}
+      <QualificationMain/>
+      <Contact/>
     </div>
   );
 }

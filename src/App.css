@@ -21,10 +21,22 @@
   padding: 0.5rem 3rem;
   overflow: hidden;
   color: var(--black);
+  margin-bottom: 1rem;
 }
 
 .darkMode {
-  background-color: #000;
+  background-image: url("https://img.freepik.com/free-vector/wave-background-abstract-gradient-design_483537-3688.jpg");
+  /* background-repeat:no-repeat; */
+background-size:100%;
+background-position:center;
+background-attachment: fixed;
+
+  /* background-repeat: no-repeat;
+  width: 100%;
+  background-size: contain;
+  background-position:center; */
+
+  /* background-color: #000; */
 }
 
 .button {
@@ -32,11 +44,15 @@
   border: none;
   color: white;
   font-size: 16px;
+  font-weight: 500;
   padding: 11px 26px;
-  /* padding: 2% 4%; */
   background: linear-gradient(rgb(233, 199, 137), rgb(251, 164, 2));
   box-shadow: 0 0 10px rgb(109, 82, 32);
+  display: inline-block;
+  text-decoration: none;
+   transition-duration: 0.2s;
 }
+
 
 .heading {
   color: var(--orange);
@@ -51,5 +67,8 @@
 @media screen and (max-width: 530px) {
   .App{
     padding: 0.5rem 1rem;
+  }
+  .heading{
+    font-size: 32px;
   }
 }

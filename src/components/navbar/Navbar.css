@@ -28,27 +28,38 @@
   /* padding: 0 1%; */
 }
 .n_lists {
-   padding: 0 1%;
+  padding: 0 1%;
   display: flex;
-   align-items: center;
+  align-items: center;
   justify-content: center;
   gap: 2rem;
   /* margin-right: 2rem; */
+}
+.n_lists > *{
+  cursor: pointer;
+}
+.n_lists >*:hover{
+  color: var(--orange);
 }
 .n_right a {
   color: #000;
   text-decoration: none;
 }
+
 /* .n_right :hover,
 .n_right a :hover {
   cursor: pointer;
   color: var(--orange);
   transform: scale(1.2);
 } */
+
 .n_btn:hover {
   background: white;
   color: var(--orange);
-  border: 2px solid var(--orange);
+  /* border: 2px solid var(--orange); */
+  box-shadow: 0 0 0 2px var(--orange);
+  cursor: pointer;
+  
 }
 
 /* .navbar {
